@@ -16,7 +16,19 @@ var express = require('express'),
 
 app.use(webpackMiddleware(webpack(webpackConfig), { publicPath: '/' }));
 
-app.use(cors());
+var whitelist = ['http://localhost:3000/', 'https://cryptocoincount.herokuapp.com/'];
+var corsOptionsDelegate = function corsOptionsDelegate(req, callback) {
+  var corsOptions;
+  if (whitelist.indexOf(req.header('Origin')) !== -1) {
+    corsOptions = { origin: true // reflect (enable) the requested origin in the CORS response
+    };
+  } else {
+    corsOptions = { origin: false // disable CORS for this request
+    };
+  }
+  callback(null, corsOptions); // callback expects two parameters: error and options
+};
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -45,10 +57,10 @@ app.use(session({
 */
 
 app.use(express.static(path.join(__dirname + './../../')));
-app.get('*', function (req, res) {
-    res.sendFile(path.resolve(__dirname + './../../src/index.html'));
+app.get('*', cors(corsOptionsDelegate), function (req, res) {
+  res.sendFile(path.resolve(__dirname + './../../src/index.html'));
 });
 
 app.listen(port, function () {
-    console.log('Server started on port ' + port);
+  console.log('Server started on port ' + port);
 });
