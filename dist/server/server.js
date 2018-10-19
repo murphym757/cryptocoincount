@@ -1,10 +1,10 @@
 'use strict';
 
 var express = require('express'),
+    cors = require('cors'),
     app = express(),
     path = require('path'),
     bodyParser = require('body-parser'),
-    cors = require('cors'),
     mongoose = require('mongoose'),
     session = require('express-session'),
     MongoStore = require('connect-mongo')(session),
@@ -16,6 +16,7 @@ var express = require('express'),
 
 app.use(webpackMiddleware(webpack(webpackConfig), { publicPath: '/' }));
 
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

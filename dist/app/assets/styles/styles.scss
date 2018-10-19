@@ -4,22 +4,30 @@ $violet: #d080d7;
 $hotPink: #e87fcd;
 $powderPink: #f9d3ff;
 $oceanGreen: #70bac9;
-$skyBlue: #75e2df;
+$skyBlue: #42B1C7;
 $softBlack: #272727;
+$black: #000000;
+
+html {
+    overflow: hidden;
+}
 
 body {
-    display: table;
+    display: block;
     width: 100%;
     height: auto;
     text-align: center;
-    background: no-repeat bottom center scroll;
-    background-color: $skyBlue;
-    background-blend-mode: multiply;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: $black;
     background-size: cover; 
     color: $softBlack;
+}
+
+.card {
+    position: relative;
+    opacity: 0.8;
+    padding-top: 30px;
+    background-color: $black;
+    height: 100%;
 }
 
 img {
@@ -27,11 +35,51 @@ img {
     height: auto;
 }
 
-h1 {
-    color: $violet;
-    font-family: 'LemonMilk';
+//Main.js Styling
+i {
+    color: $powderPink;
 }
 
+// Grid
+.grid {
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: -50%;
+    background-color: $black;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 85%, $hotPink 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, $oceanGreen 90%, transparent 95%);
+    background-size: 12px 12px;
+    width: 200vw;
+    height: 20vh;
+    transform: translate3D(0, 0, 0) perspective(150px) rotateX(45deg);
+    perspective-origin: top;
+    
+    animation-name: movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .grid:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, $black);
+  }
+  
+  @keyframes movement {
+    0% {background-position: 0% 0%;}
+    100% {background-position: 0% 100%;}
+  }
+
+// Cryptocurrencies
+.left-ccc,
+.right-ccc {
+    color: white;
+}
 
 // Media Queries
 /* ---------------------------------------------------- */
@@ -39,7 +87,7 @@ h1 {
 /* Small devices (Phones, 768px) */
 
 @media (max-width: 767px) and (orientation: portrait) {
-    
+
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
@@ -89,7 +137,7 @@ h1 {
 /* MDPI Screens (Computers, 1440px and up) */
 
 @media (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) {
-   
+    
 }
 
 /* ---------------------------------------------------- */
