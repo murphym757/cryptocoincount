@@ -1,31 +1,22 @@
 import React, { Component } from 'react';
-import CryptoPage from '../cryptocurrencies/cryptoPage.js';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Navigation from '../design/navigation.js';
+import LitecoinPage from '../cryptocurrencies/litecoin.js';
+import Logo from '../design/logo.js';
+import ColorGrid from '../design/colorGrid.js';
+
 export default class Home extends Component {
-
-    litecoinButton() {
-        <CryptoPage />
-    }
-
     render() {
         return (
-            <div class="container pt-3">
-            <div class="card">
-                <div class="app-title">
-                    <img class="ccc-logo" src="./src/app/assets/images/CryptoCoinCount-logo.svg" width="700" alt="logo" />
+            <Router>
+                <div>
+                    <Logo />
+                    {/*Routes*/}
+                    <Route exact path="/" component={Navigation}/>
+                    <Route path="/litecoin" component={LitecoinPage}/>
+                    <ColorGrid /> 
                 </div>
-                
-                <button onclick="litecoinButton()">Click me</button> 
-                <div class="row">
-            <div class="col-sm">
-            <i class="fas fa-chart-area fa-10x"></i>
-            </div>
-            <div class="col-sm">
-            <i class="fas fa-chart-area fa-10x"></i>
-            </div>
-        </div>
-        </div>
-                <div class="grid"></div>   
-            </div>
+            </Router>
           );
       }
 }
