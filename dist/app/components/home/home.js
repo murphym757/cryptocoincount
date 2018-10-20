@@ -10,9 +10,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _bitcoinccc = require('../cryptocurrencies/bitcoinccc.js');
+var _cryptoPage = require('../cryptocurrencies/cryptoPage.js');
 
-var _bitcoinccc2 = _interopRequireDefault(_bitcoinccc);
+var _cryptoPage2 = _interopRequireDefault(_cryptoPage);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45,7 +45,7 @@ var Home = function (_Component) {
                         { 'class': 'app-title' },
                         _react2.default.createElement('img', { 'class': 'ccc-logo', src: './src/app/assets/images/CryptoCoinCount-logo.svg', width: '700', alt: 'logo' })
                     ),
-                    _react2.default.createElement(_bitcoinccc2.default, null),
+                    _react2.default.createElement(_cryptoPage2.default, null),
                     _react2.default.createElement(
                         'div',
                         { 'class': 'row' },

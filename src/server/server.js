@@ -1,8 +1,8 @@
 const express = require('express'),
-  cors = require('cors'),
   app = express(),
   path = require('path'),
   bodyParser = require('body-parser'),
+  cors = require('cors'),
   mongoose = require('mongoose'),
   session = require('express-session'),
   MongoStore = require('connect-mongo')(session),
@@ -16,18 +16,6 @@ const express = require('express'),
     webpack(webpackConfig),
     { publicPath: '/' }
 ));
-
-
-var whitelist = ['http://localhost:3000/', 'https://cryptocoincount.herokuapp.com/']
-var corsOptionsDelegate = function (req, callback) {
-  var corsOptions;
-  if (whitelist.indexOf(req.header('Origin')) !== -1) {
-    corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
-  } else {
-    corsOptions = { origin: false } // disable CORS for this request
-  }
-  callback(null, corsOptions) // callback expects two parameters: error and options
-}
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -58,7 +46,7 @@ app.use(session({
 */
 
 app.use(express.static(path.join(__dirname + './../../')));
-app.get('*', cors(corsOptionsDelegate), function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.resolve(__dirname + './../../src/index.html'));
 });
 
