@@ -16,7 +16,6 @@ var express = require('express'),
 
 app.use(webpackMiddleware(webpack(webpackConfig), { publicPath: '/' }));
 
-app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -45,7 +44,7 @@ app.use(session({
 */
 
 app.use(express.static(path.join(__dirname + './../../')));
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.resolve(__dirname + './../../src/index.html'));
 });
 

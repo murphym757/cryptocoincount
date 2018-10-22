@@ -1,4 +1,4 @@
-// Miami 1985 Color Palette
+// CryptoCoinCount Color Palette
 
 $violet: #d080d7;
 $hotPink: #e87fcd;
@@ -7,6 +7,13 @@ $oceanGreen: #70bac9;
 $skyBlue: #42B1C7;
 $softBlack: #272727;
 $black: #000000;
+$bitcoin: #F7931A;
+$dash: #2D73B9;
+$ethereum: #8992B2;
+$liteCoin: #BEBEBE;
+$monero: #FF6600;
+$ripple: #10A3DB;
+
 
 html {
     overflow: hidden;
@@ -30,29 +37,33 @@ body {
     height: 100%;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
 img {
     max-width: 100%;
     height: auto;
 }
 
 //Main.js Styling
-i {
-    color: $powderPink;
-}
+
+
+
 
 // Grid
 .grid {
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: -50%;
     background-color: $black;
     background-image: linear-gradient(90deg, transparent 0%, transparent 85%, $hotPink 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, $oceanGreen 90%, transparent 95%);
-    background-size: 12px 12px;
+    background-size: 17px 17px;
     width: 200vw;
-    height: 20vh;
+    height: 10vh;
     transform: translate3D(0, 0, 0) perspective(150px) rotateX(45deg);
-    perspective-origin: top;
+
     
     animation-name: movement;
     animation-duration: 20s;
@@ -74,12 +85,6 @@ i {
     0% {background-position: 0% 0%;}
     100% {background-position: 0% 100%;}
   }
-
-// Cryptocurrencies
-.left-ccc,
-.right-ccc {
-    color: white;
-}
 
 // Media Queries
 /* ---------------------------------------------------- */

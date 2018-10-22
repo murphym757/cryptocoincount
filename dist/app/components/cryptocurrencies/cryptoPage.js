@@ -36,6 +36,9 @@ var CryptoPage = function (_Component) {
             coin: {
                 fromLogo: null,
                 toLogo: null
+            },
+            priceData: {
+                coinPrice: null
             }
         };
         return _this;
@@ -44,12 +47,36 @@ var CryptoPage = function (_Component) {
     _createClass(CryptoPage, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
+            this.generalCoinInfo();
+            this.coinPriceData();
+        }
+    }, {
+        key: 'generalCoinInfo',
+        value: function generalCoinInfo() {
             var _this2 = this;
 
-            _axios2.default.get('https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?id=3808').then(function (res) {
+            var coinType = "LTC";
+            _axios2.default.get('https://min-api.cryptocompare.com/data/top/exchanges/full?fsym=' + coinType + '&tsym=USD&e=coinbase').then(function (res) {
                 _this2.setState({
                     coin: {
-                        fromLogo: res.data.Data.General.Id
+                        coinId: res.data.Data.CoinInfo.Id,
+                        coinName: res.data.Data.CoinInfo.Name,
+                        coinFullName: res.data.Data.CoinInfo.FullName
+                    }
+                });
+            });
+        }
+    }, {
+        key: 'coinPriceData',
+        value: function coinPriceData() {
+            var _this3 = this;
+
+            var coinType = "LTC";
+            _axios2.default.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=' + coinType + '&tsyms=USD&e=coinbase').then(function (res) {
+                _this3.setState({
+                    priceData: {
+                        coinPrice: res.data.DISPLAY.LTC.USD.PRICE,
+                        coinExchange: res.data.DISPLAY.LTC.USD.MARKET
                     }
                 });
             });
@@ -61,14 +88,19 @@ var CryptoPage = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(
-                    'h1',
+                    'h5',
                     null,
-                    this.state.coin.fromLogo
+                    this.state.coin.coinId
                 ),
                 _react2.default.createElement(
-                    'h1',
+                    'h5',
                     null,
-                    this.state.coin.toLogo
+                    this.state.coin.coinName
+                ),
+                _react2.default.createElement(
+                    'h5',
+                    null,
+                    this.state.priceData.coinPrice
                 )
             );
         }

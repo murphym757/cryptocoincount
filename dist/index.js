@@ -28,6 +28,20 @@ var _fonts = require('./app/assets/styles/fonts.scss');
 
 var _fonts2 = _interopRequireDefault(_fonts);
 
+require('./app/assets/cryptoFont/sass/cryptofont.scss');
+
+require('./app/assets/styles/cryptoIcons.scss');
+
+require('./app/assets/styles/cryptocurrencies.scss');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react2.default.createElement(_main2.default, null), document.getElementById("app"));
+// Cryptocurrency Page Styling
+
+// Fonts
+// Cryptofont Styling
+// Overall Page Styling
+(0, _reactDom.render)(_react2.default.createElement(_main2.default, null), document.getElementById("app")); // Crypto Icons
+
+
+// Styling

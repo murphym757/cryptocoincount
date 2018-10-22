@@ -10,9 +10,27 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _cryptoPage = require('../cryptocurrencies/cryptoPage.js');
+var _reactRouterDom = require('react-router-dom');
 
-var _cryptoPage2 = _interopRequireDefault(_cryptoPage);
+var _navigation = require('../design/navigation.js');
+
+var _navigation2 = _interopRequireDefault(_navigation);
+
+var _litecoin = require('../cryptocurrencies/litecoin.js');
+
+var _litecoin2 = _interopRequireDefault(_litecoin);
+
+var _logo = require('../design/logo.js');
+
+var _logo2 = _interopRequireDefault(_logo);
+
+var _colorGrid = require('../design/colorGrid.js');
+
+var _colorGrid2 = _interopRequireDefault(_colorGrid);
+
+var _cryptoLinks = require('../design/cryptoLinks.js');
+
+var _cryptoLinks2 = _interopRequireDefault(_cryptoLinks);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35,33 +53,21 @@ var Home = function (_Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                { 'class': 'container pt-3' },
+                _reactRouterDom.BrowserRouter,
+                null,
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'card' },
+                    { 'class': 'container' },
+                    _react2.default.createElement(_logo2.default, null),
+                    _react2.default.createElement(_cryptoLinks2.default, null),
                     _react2.default.createElement(
-                        'div',
-                        { 'class': 'app-title' },
-                        _react2.default.createElement('img', { 'class': 'ccc-logo', src: './src/app/assets/images/CryptoCoinCount-logo.svg', width: '700', alt: 'logo' })
+                        _reactRouterDom.Switch,
+                        null,
+                        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/litecoin', component: _litecoin2.default })
                     ),
-                    _react2.default.createElement(_cryptoPage2.default, null),
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'row' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm' },
-                            _react2.default.createElement('i', { 'class': 'fas fa-chart-area fa-10x' })
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'col-sm' },
-                            _react2.default.createElement('i', { 'class': 'fas fa-chart-area fa-10x' })
-                        )
-                    )
-                ),
-                _react2.default.createElement('div', { 'class': 'grid' })
+                    _react2.default.createElement(_colorGrid2.default, null)
+                )
             );
         }
     }]);

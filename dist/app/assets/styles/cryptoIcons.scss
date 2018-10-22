@@ -1,0 +1,31 @@
+// Cryptocurrency Color Palette
+$bitcoin: #F7931A;
+$dash: #2D73B9;
+$ethereum: #8992B2;
+$liteCoin: #BEBEBE;
+$monero: #FF6600;
+$ripple: #10A3DB;
+
+// Cryptocurrency Icons
+.cf-btc {
+    color: $bitcoin;
+}
+.cf-dash {
+    color: $dash;
+}
+.cf-eth {
+    color: $ethereum;
+}
+.cf-ltc {
+    color: $liteCoin;
+}
+.cf-ltc:active,
+.cf-ltc:visited  {
+    text-shadow: 0 0 10px $liteCoin;
+}
+.cf-xmr {
+    color: $monero;
+}
+.cf-xrp {
+    color: $ripple;
+}
