@@ -10,6 +10,6 @@ import './app/assets/styles/styles.scss'; // Overall Page Styling
 import fontStyles from './app/assets/styles/fonts.scss'; // Fonts
 import './app/assets/cryptoFont/sass/cryptofont.scss' // Cryptofont Styling
 import './app/assets/styles/cryptoIcons.scss' // Crypto Icons
-import './app/assets/styles/cryptocurrencies.scss' // Cryptocurrency Page Styling
+import './app/assets/styles/cryptocurrenciesLTC.scss' // Cryptocurrency page styling for Litecoin
 
 render(<MainSource />, document.getElementById("app"));

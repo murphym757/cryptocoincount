@@ -32,11 +32,11 @@ require('./app/assets/cryptoFont/sass/cryptofont.scss');
 
 require('./app/assets/styles/cryptoIcons.scss');
 
-require('./app/assets/styles/cryptocurrencies.scss');
+require('./app/assets/styles/cryptocurrenciesLTC.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Cryptocurrency Page Styling
+// Cryptocurrency page styling for Litecoin
 
 // Fonts
 // Cryptofont Styling

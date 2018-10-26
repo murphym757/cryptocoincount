@@ -7,7 +7,12 @@ import Logo from '../design/logo.js';
 export default class Navigation extends Component {
     render() {
         return (
-            <div></div>
+            <div>
+                <CryptoLinks />
+                <div class="container-fluid">
+                    <div class="grid"></div>
+                </div> 
+            </div> 
           );
       }
 }

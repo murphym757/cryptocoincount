@@ -34,7 +34,7 @@ var CryptoLinks = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { 'class': 'container pb-3' },
+                { 'class': 'container pb-3 pt-3' },
                 _react2.default.createElement(
                     'div',
                     { 'class': 'row' },
@@ -44,7 +44,7 @@ var CryptoLinks = function (_Component) {
                         _react2.default.createElement(
                             _reactRouterDom.Link,
                             { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-btc' })
+                            _react2.default.createElement('i', { 'class': 'cf cf-btc btc-links' })
                         )
                     ),
                     _react2.default.createElement(
@@ -71,7 +71,11 @@ var CryptoLinks = function (_Component) {
                         _react2.default.createElement(
                             _reactRouterDom.Link,
                             { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-ltc' })
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'ltc-Link' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-ltc' })
+                            )
                         )
                     ),
                     _react2.default.createElement(

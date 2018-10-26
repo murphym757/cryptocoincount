@@ -41,7 +41,16 @@ var Navigation = function (_Component) {
     _createClass(Navigation, [{
         key: 'render',
         value: function render() {
-            return _react2.default.createElement('div', null);
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(_cryptoLinks2.default, null),
+                _react2.default.createElement(
+                    'div',
+                    { 'class': 'container-fluid' },
+                    _react2.default.createElement('div', { 'class': 'grid' })
+                )
+            );
         }
     }]);
 
