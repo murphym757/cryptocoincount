@@ -96,9 +96,7 @@ export default class LitecoinPage extends Component {
                             </h6>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <div class="grid-LTC"></div>
-                    </div>    
+                    <div class="grid-LTC"></div>  
                 </div>
             </div>
           );

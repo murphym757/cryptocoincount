@@ -33,7 +33,7 @@ body {
     position: relative;
     opacity: 0.8;
     padding-top: 30px;
-    background-color: $black;
+    background-color: $liteCoin;
     height: 100%;
 }
 
@@ -54,7 +54,7 @@ img {
 // Grid
 .grid {
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     bottom: 0;
     left: -50%;

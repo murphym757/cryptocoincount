@@ -9,7 +9,7 @@ export default class Navigation extends Component {
         return (
             <div>
                 <CryptoLinks />
-                <div class="container-fluid">
+                <div class="container">
                     <div class="grid"></div>
                 </div> 
             </div> 

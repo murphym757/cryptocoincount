@@ -47,7 +47,7 @@ var Navigation = function (_Component) {
                 _react2.default.createElement(_cryptoLinks2.default, null),
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container-fluid' },
+                    { 'class': 'container' },
                     _react2.default.createElement('div', { 'class': 'grid' })
                 )
             );
