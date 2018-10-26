@@ -51,13 +51,19 @@ footer {
     padding-top: 25px;
 }
 
-
+.btc-Icon,
+.dash-Icon,
+.eth-Icon,
+.ltc-Icon,
+.xmr-Icon,
+.xrp-Icon {
+    font-size: 150px;
+}
 
 // Grid
 .grid {
     margin: 0 auto;
     position: fixed;
-    z-index: -1;
     bottom: 0;
     background-color: $black;
     background-image: linear-gradient(90deg, transparent 0%, transparent 85%, $hotPink 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, $oceanGreen 90%, transparent 95%);
