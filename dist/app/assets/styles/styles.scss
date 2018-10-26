@@ -47,7 +47,9 @@ img {
 }
 
 //Main.js Styling
-
+footer {
+    padding-top: 25px;
+}
 
 
 
@@ -57,12 +59,9 @@ img {
     position: fixed;
     z-index: -1;
     bottom: 0;
-    left: -50%;
     background-color: $black;
     background-image: linear-gradient(90deg, transparent 0%, transparent 85%, $hotPink 90%, transparent 95%), linear-gradient(0deg, transparent 0%, transparent 85%, $oceanGreen 90%, transparent 95%);
     background-size: 17px 17px;
-    width: 200vw;
-    height: 10vh;
     transform: translate3D(0, 0, 0) perspective(150px) rotateX(45deg);
 
     

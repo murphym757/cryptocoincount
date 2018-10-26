@@ -250,8 +250,7 @@ var LitecoinPage = function (_Component) {
                                 )
                             )
                         )
-                    ),
-                    _react2.default.createElement('div', { 'class': 'grid-LTC' })
+                    )
                 )
             );
         }

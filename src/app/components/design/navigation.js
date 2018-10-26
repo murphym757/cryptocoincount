@@ -8,10 +8,7 @@ export default class Navigation extends Component {
     render() {
         return (
             <div>
-                <CryptoLinks />
-                <div class="container">
-                    <div class="grid"></div>
-                </div> 
+                <CryptoLinks /> 
             </div> 
           );
       }

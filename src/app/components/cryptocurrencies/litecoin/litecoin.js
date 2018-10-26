@@ -95,8 +95,7 @@ export default class LitecoinPage extends Component {
                                 <a href="https://www.investopedia.com/terms/l/litecoin.asp" class="InvestopediaLTC" target="_blank">- Investopedia</a>
                             </h6>
                         </div>
-                    </div>
-                    <div class="grid-LTC"></div>  
+                    </div>  
                 </div>
             </div>
           );

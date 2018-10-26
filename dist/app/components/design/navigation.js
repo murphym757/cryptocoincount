@@ -44,12 +44,7 @@ var Navigation = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_cryptoLinks2.default, null),
-                _react2.default.createElement(
-                    'div',
-                    { 'class': 'container' },
-                    _react2.default.createElement('div', { 'class': 'grid' })
-                )
+                _react2.default.createElement(_cryptoLinks2.default, null)
             );
         }
     }]);
