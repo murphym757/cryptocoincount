@@ -70,7 +70,11 @@ var Home = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { 'class': 'container' },
-                    _react2.default.createElement(_logo2.default, null),
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/', style: { textDecoration: 'none' } },
+                        _react2.default.createElement(_logo2.default, null)
+                    ),
                     _react2.default.createElement(
                         _reactRouterDom.Switch,
                         null,

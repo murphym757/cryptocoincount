@@ -182,8 +182,8 @@ var RipplePage = function (_Component) {
                                 'Bitcoin (',
                                 _react2.default.createElement(
                                     'span',
-                                    { 'class': 'bitcoinLogo' },
-                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompare' })
+                                    { 'class': 'bitcoinLogoXRP' },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompareXRP' })
                                 ),
                                 ')'
                             ),

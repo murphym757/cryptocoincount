@@ -189,10 +189,6 @@ $ripple: #10A3DB;
     font-family: 'Montserrat-ThinItalic';
 }
 
-.btcCompare {
-    text-shadow: 0 0 7px $liteCoin;
-    color: $liteCoin; 
-}
 
 .btc-Link,
 .changePriceBTC,
@@ -213,11 +209,13 @@ $ripple: #10A3DB;
 .btcPercentChangeDASH,
 .BTCchangePriceDASH,
 .BTCchangePercentDASH,
+.bitcoinLogoDASH,
 .dash-notActiveLink {
     color: $dash;
 }
 
 .dash-activeLink,
+.btcCompareDASH,
 .dash-notActiveLink:hover {
     color: $dash;
     text-shadow: 0 0 7px $dash;
@@ -229,11 +227,13 @@ $ripple: #10A3DB;
 .btcPercentChangeETH,
 .BTCchangePriceETH,
 .BTCchangePercentETH,
+.bitcoinLogoETH,
 .eth-notActiveLink {
     color: $ethereum;
 }
 
 .eth-activeLink,
+.btcCompareETH,
 .eth-notActiveLink:hover {
     color: $ethereum;
     text-shadow: 0 0 7px $ethereum;
@@ -245,11 +245,13 @@ $ripple: #10A3DB;
 .btcPercentChangeLTC,
 .BTCchangePriceLTC,
 .BTCchangePercentLTC,
+.bitcoinLogoLTC,
 .ltc-notActiveLink {
     color: $liteCoin;
 }
 
 .ltc-activeLink,
+.btcCompareLTC,
 .ltc-notActiveLink:hover {
     color: $liteCoin;
     text-shadow: 0 0 7px $liteCoin;
@@ -261,11 +263,13 @@ $ripple: #10A3DB;
 .btcPercentChangeXMR,
 .BTCchangePriceXMR,
 .BTCchangePercentXMR,
+.bitcoinLogoXMR,
 .xmr-notActiveLink {
     color: $monero;
 }
 
 .xmr-activeLink,
+.btcCompareXMR,
 .xmr-notActiveLink:hover {
     color: $monero;
     text-shadow: 0 0 7px $monero;
@@ -277,11 +281,13 @@ $ripple: #10A3DB;
 .btcPercentChangeXRP,
 .BTCchangePriceXRP,
 .BTCchangePercentXRP,
+.bitcoinLogoXRP,
 .xrp-notActiveLink {
     color: $ripple;
 }
 
 .xrp-activeLink,
+.btcCompareXRP,
 .xrp-notActiveLink:hover {
     color: $ripple;
     text-shadow: 0 0 7px $ripple;

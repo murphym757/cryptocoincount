@@ -182,8 +182,8 @@ var DashPage = function (_Component) {
                                 'Bitcoin (',
                                 _react2.default.createElement(
                                     'span',
-                                    { 'class': 'bitcoinLogo' },
-                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompare' })
+                                    { 'class': 'bitcoinLogoDASH' },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompareDASH' })
                                 ),
                                 ')'
                             ),

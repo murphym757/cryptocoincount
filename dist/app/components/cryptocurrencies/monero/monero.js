@@ -182,8 +182,8 @@ var MoneroPage = function (_Component) {
                                 'Bitcoin (',
                                 _react2.default.createElement(
                                     'span',
-                                    { 'class': 'bitcoinLogo' },
-                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompare' })
+                                    { 'class': 'bitcoinLogoXMR' },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompareXMR' })
                                 ),
                                 ')'
                             ),

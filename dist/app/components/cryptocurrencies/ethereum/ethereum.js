@@ -182,8 +182,8 @@ var LitecoinPage = function (_Component) {
                                 'Bitcoin (',
                                 _react2.default.createElement(
                                     'span',
-                                    { 'class': 'bitcoinLogo' },
-                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompare' })
+                                    { 'class': 'bitcoinLogoETH' },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompareETH' })
                                 ),
                                 ')'
                             ),
