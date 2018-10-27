@@ -89,7 +89,7 @@ export default class LitecoinPage extends Component {
                                 control or interference from a third party.
                             </h6>
                             <h6 class="investopediaLink lead">
-                                <a href="https://www.investopedia.com/terms/e/ethereum.asp" class="InvestopediaLTC" target="_blank">- Investopedia</a>
+                                <a href="https://www.investopedia.com/terms/e/ethereum.asp" class="InvestopediaETH" target="_blank">- Investopedia</a>
                             </h6>
                         </div>
                     </div>  

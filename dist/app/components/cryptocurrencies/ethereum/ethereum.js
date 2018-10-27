@@ -240,7 +240,7 @@ var LitecoinPage = function (_Component) {
                                 { 'class': 'investopediaLink lead' },
                                 _react2.default.createElement(
                                     'a',
-                                    { href: 'https://www.investopedia.com/terms/e/ethereum.asp', 'class': 'InvestopediaLTC', target: '_blank' },
+                                    { href: 'https://www.investopedia.com/terms/e/ethereum.asp', 'class': 'InvestopediaETH', target: '_blank' },
                                     '- Investopedia'
                                 )
                             )
