@@ -43,8 +43,151 @@ var Navigation = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
-                _react2.default.createElement(_cryptoLinks2.default, null)
+                { 'class': 'container-fluid naviLinks' },
+                _react2.default.createElement(
+                    'div',
+                    { 'class': 'row' },
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 btc-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btc-links' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 btc-link-name' },
+                                'Bitcoin'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 dash-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-dash' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 dash-link-name' },
+                                'Dash'
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { 'class': 'row pt-2 pb-2' },
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 eth-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-eth' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 eth-link-name' },
+                                'Ethereum'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 ltc-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-ltc' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 ltc-link-name' },
+                                'Litecoin'
+                            )
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { 'class': 'row pb-5' },
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 xmr-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-xmr' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 xmr-link-name' },
+                                'Monero'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'col-6 xrp-Icon' },
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'row' },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'col-12' },
+                                _react2.default.createElement(
+                                    _reactRouterDom.Link,
+                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-xrp' })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'h3',
+                                { 'class': 'col-12 xrp-link-name' },
+                                'Ripple'
+                            )
+                        )
+                    )
+                )
             );
         }
     }]);
