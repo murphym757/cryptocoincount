@@ -14,48 +14,153 @@ $liteCoin: #BEBEBE;
 $monero: #FF6600;
 $ripple: #10A3DB;
 
-// Litecoin
+// Cryptocurrencies
+.cryptoDefinitionBTC,
+.cryptoDefinitionDASH,
+.cryptoDefinitionETH,
 .cryptoDefinitionLTC,
-.priceLTC {
-    font-family: 'CocogooseProThin';
+.cryptoDefinitionXMR,
+.cryptoDefinitionXRP,
+.priceBTC,
+.priceDASH,
+.priceETH,
+.priceLTC,
+.priceXMR,
+.priceXRP {
+    font-family: 'Montserrat-Thin';
 }
 
 .coinPageTitle  {
-    font-family: 'CocogooseProLight';
+    font-family: 'Montserrat-Light';
 }
 
 .coinCurrentPrice {
-    font-family: 'CocogooseProUltralight';
+    font-family: 'Montserrat-ExtraLight';
 }
 
-.coinInitialsLTC {
-    font-family: 'CocogoosePro';
+.coinInitialsBTC,
+.coinInitialsDASH,
+.coinInitialsETH,
+.coinInitialsLTC,
+.coinInitialsXMR,
+.coinInitialsXRP {
+    font-family: 'Montserrat-Black';
 }
 
+.coinInitialsBTC,
+.priceBTC {
+    color: $bitcoin;
+    text-shadow: 0 0 5px $bitcoin;
+}
+.coinInitialsDASH,
+.priceDASH {
+    color: $dash;
+    text-shadow: 0 0 5px $dash;
+}
+.coinInitialsETH,
+.priceETH {
+    color: $ethereum;
+    text-shadow: 0 0 5px $ethereum;
+}
 .coinInitialsLTC,
 .priceLTC {
     color: $liteCoin;
     text-shadow: 0 0 5px $liteCoin;
 }
+.coinInitialsXMR,
+.priceXMR {
+    color: $monero;
+    text-shadow: 0 0 5px $monero;
+}
+.coinInitialsXRP,
+.priceXRP {
+    color: $ripple;
+    text-shadow: 0 0 5px $ripple;
+}
 
+.investopediaBTC,
+.investopediaBTC:hover {
+    font-size: 14px;
+    color: $bitcoin;
+}
+.investopediaDASH,
+.investopediaDASH:hover {
+    font-size: 14px;
+    color: $dash;
+}
+.investopediaETH,
+.investopediaETH:hover {
+    font-size: 14px;
+    color: $ethereum;
+}
 .investopediaLTC,
 .investopediaLTC:hover {
     font-size: 14px;
     color: $liteCoin;
 }
+.investopediaXMR,
+.investopediaXMR:hover {
+    font-size: 14px;
+    color: $monero;
+}
+.investopediaXRP,
+.investopediaXRP:hover {
+    font-size: 14px;
+    color: $ripple;
+}
 
+.cryptoDefinitionBTC::first-letter {
+    font-size: 150%;
+    color: $bitcoin;
+    font-family: 'Montserrat-ExtraLight';
+    text-shadow: 0 0 7px $bitcoin;
+}
+.cryptoDefinitionDASH::first-letter {
+    font-size: 150%;
+    color: $dash;
+    font-family: 'Montserrat-ExtraLight';
+    text-shadow: 0 0 7px $dash;
+}
+.cryptoDefinitionETH::first-letter {
+    font-size: 150%;
+    color: $ethereum;
+    font-family: 'Montserrat-ExtraLight';
+    text-shadow: 0 0 7px $ethereum;
+}
 .cryptoDefinitionLTC::first-letter {
     font-size: 150%;
     color: $liteCoin;
-    font-family: 'CocogooseProUltralight';
+    font-family: 'Montserrat-ExtraLight';
     text-shadow: 0 0 7px $liteCoin;
 }
+.cryptoDefinitionXMR::first-letter {
+    font-size: 150%;
+    color: $monero;
+    font-family: 'Montserrat-ExtraLight';
+    text-shadow: 0 0 7px $monero;
+}
+.cryptoDefinitionXRP::first-letter {
+    font-size: 150%;
+    color: $ripple;
+    font-family: 'Montserrat-ExtraLight';
+    text-shadow: 0 0 7px $ripple;
+}
+
 .investopediaLink,
-.changePrice,
-.changePercent,
-.exchangeName,
-.exchangeNameLTC {
-    font-family: 'CocogooseProThinItalic';
+.changePriceBTC,
+.changePercentBTC,
+.changePriceETH,
+.changePercentETH,
+.changePriceDASH,
+.changePercentDASH,
+.changePriceLTC,
+.changePercentLTC,
+.changePriceXMR,
+.changePercentXMR,
+.changePriceXRP,
+.changePercentXRP,
+.exchangeName {
+    font-family: 'Montserrat-ThinItalic';
 }
 
 .btcCompare {
@@ -63,28 +168,91 @@ $ripple: #10A3DB;
     color: $liteCoin; 
 }
 
+.btc-Link,
+.changePriceBTC,
+.changePercentBTC {
+    color: $bitcoin;
+}
+.btc-Link:hover,
+.btc-activeLink {
+    text-shadow: 0 0 7px $bitcoin;
+}
+.dash-Link:hover,
+.dash-activeLink {
+    text-shadow: 0 0 7px $dash;
+}
+.dash-Link,
+.changePriceDASH,
+.changePercentDASH {
+    color: $dash;
+}
+.eth-Link:hover,
+.eth-activeLink {
+    text-shadow: 0 0 7px $ethereum;
+}
+.eth-Link,
+.changePriceETH,
+.changePercentETH {
+    color: $ethereum;
+}
 .ltc-Link,
-.changePrice,
-.changePercent {
+.changePriceLTC,
+.changePercentLTC {
     color: $liteCoin;
 }
 .ltc-Link:hover,
 .ltc-activeLink {
     text-shadow: 0 0 7px $liteCoin;
 }
+.xmr-Link,
+.changePriceXMR,
+.changePercentXMR {
+    color: $monero;
+}
+.xmr-Link:hover,
+.xmr-activeLink {
+    text-shadow: 0 0 7px $monero;
+}
+.xrp-Link,
+.changePriceXRP,
+.changePercentXRP {
+    color: $ripple;
+}
+.xrp-Link:hover,
+.xrp-activeLink {
+    text-shadow: 0 0 7px $ripple;
+}
 
   // Media Queries
 /* ---------------------------------------------------- */
 /* ---------------------------------------------------- */
-/* (Portrait Orientation) */
 
 /* iphone 4 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) { 
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 480px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) { 
     .changePrice,
     .changePercent,
+    .investopediaBTC,
+    .investopediaDASH,
+    .investopediaETH,
     .investopediaLTC,
+    .investopediaXMR,
+    .investopediaXRP,
+    .exchangeNameBTC,
+    .exchangeNameDASH,
+    .exchangeNameETH,
     .exchangeNameLTC,
-    .investopediaLTC:hover {
+    .exchangeNameXMR,
+    .exchangeNameXRP,
+    .investopediaBTC:hover
+    .investopediaDASH:hover
+    .investopediaETH:hover
+    .investopediaLTC:hover
+    .investopediaXMR:hover
+    .investopediaXRP:hover {
         font-size: 12px;
     }
 
@@ -102,14 +270,36 @@ $ripple: #10A3DB;
 }
 
 /* iphone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) { 
-    .changePrice,
-    .changePercent,
-    .exchangeName,
-    .exchangeNameLTC,
-    .investopediaLTC,
-    .investopediaLTC:hover,
-    .cryptoDefinitionLTC {
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 568px) 
+    and (orientation: portrait) { 
+        .changePrice,
+        .changePercent,
+        .exchangeNameBTC,
+        .exchangeNameDASH,
+        .exchangeNameETH,
+        .exchangeNameLTC,
+        .exchangeNameXMR,
+        .exchangeNameXRP,
+        .investopediaBTC,
+        .investopediaBTC:hover,
+        .investopediaDASH,
+        .investopediaDASH:hover,
+        .investopediaETH,
+        .investopediaETH:hover,
+        .investopediaLTC,
+        .investopediaLTC:hover,
+        .investopediaXMR,
+        .investopediaXMR:hover,
+        .investopediaXRP,
+        .investopediaXRP:hover,
+        .cryptoDefinitionBTC,
+        .cryptoDefinitionDASH,
+        .cryptoDefinitionETH,
+        .cryptoDefinitionLTC,
+        .cryptoDefinitionXMR,
+        .cryptoDefinitionXRP {
         font-size: 0.5625em;
     }
 
@@ -129,12 +319,30 @@ $ripple: #10A3DB;
 }
 
 /* Galaxy S5 */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
-    .changePrice,
-    .changePercent,
-    .exchangeNameLTC,
-    .investopediaLTC,
-    .investopediaLTC:hover{
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-height: 640px) 
+    and (orientation: portrait) {
+        .changePrice,
+        .changePercent,
+        .exchangeNameBTC,
+        .exchangeNameDASH,
+        .exchangeNameETH,
+        .exchangeNameLTC,
+        .exchangeNameXMR,
+        .exchangeNameXRP,
+        .investopediaBTC,
+        .investopediaBTC:hover,
+        .investopediaDASH,
+        .investopediaDASH:hover,
+        .investopediaETH,
+        .investopediaETH:hover,
+        .investopediaLTC,
+        .investopediaLTC:hover,
+        .investopediaXMR,
+        .investopediaXMR:hover,
+        .investopediaXRP,
+        .investopediaXRP:hover{
         font-size: 0.625em;;
     }
 
@@ -144,7 +352,12 @@ $ripple: #10A3DB;
 
     .coinPageUSD,
     .coinPageBTC,
-    .cryptoDefinitionLTC {
+    .cryptoDefinitionBTC,
+    .cryptoDefinitionDASH,
+    .cryptoDefinitionETH,
+    .cryptoDefinitionLTC,
+    .cryptoDefinitionXMR,
+    .cryptoDefinitionXRP {
         font-size: 0.9375em;
     }
 
@@ -155,12 +368,31 @@ $ripple: #10A3DB;
 }
 
 /* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) { 
-    .changePrice,
-    .changePercent,
-    .investopediaLTC,
-    .exchangeNameLTC,
-    .investopediaLTC:hover {
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) { 
+        .changePrice,
+        .changePercent,
+        .exchangeNameBTC,
+        .exchangeNameDASH,
+        .exchangeNameETH,
+        .exchangeNameLTC,
+        .exchangeNameXMR,
+        .exchangeNameXRP,
+        .investopediaBTC,
+        .investopediaBTC:hover,
+        .investopediaDASH,
+        .investopediaDASH:hover,
+        .investopediaETH,
+        .investopediaETH:hover,
+        .investopediaLTC,
+        .investopediaLTC:hover,
+        .investopediaXMR,
+        .investopediaXMR:hover,
+        .investopediaXRP,
+        .investopediaXRP:hover {
         font-size: 0.75em;
     }
 
@@ -189,12 +421,31 @@ $ripple: #10A3DB;
 }
 
 /* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { 
-    .changePrice,
-    .changePercent,
-    .investopediaLTC,
-    .exchangeNameLTC,
-    .investopediaLTC:hover {
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) { 
+        .changePrice,
+        .changePercent,
+        .exchangeNameBTC,
+        .exchangeNameDASH,
+        .exchangeNameETH,
+        .exchangeNameLTC,
+        .exchangeNameXMR,
+        .exchangeNameXRP,
+        .investopediaBTC,
+        .investopediaBTC:hover,
+        .investopediaDASH,
+        .investopediaDASH:hover,
+        .investopediaETH,
+        .investopediaETH:hover,
+        .investopediaLTC,
+        .investopediaLTC:hover,
+        .investopediaXMR,
+        .investopediaXMR:hover,
+        .investopediaXRP,
+        .investopediaXRP:hover {
         font-size: 0.9375em;
     }
 
@@ -223,12 +474,31 @@ $ripple: #10A3DB;
 }
 
 /* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { 
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) { 
     .changePrice,
     .changePercent,
-    .investopediaLTC,
+    .exchangeNameBTC,
+    .exchangeNameDASH,
+    .exchangeNameETH,
     .exchangeNameLTC,
-    .investopediaLTC:hover {
+    .exchangeNameXMR,
+    .exchangeNameXRP,
+    .investopediaBTC,
+    .investopediaBTC:hover,
+    .investopediaDASH,
+    .investopediaDASH:hover,
+    .investopediaETH,
+    .investopediaETH:hover,
+    .investopediaLTC,
+    .investopediaLTC:hover,
+    .investopediaXMR,
+    .investopediaXMR:hover,
+    .investopediaXRP,
+    .investopediaXRP:hover {
         font-size: 0.75em;
     }
 
@@ -238,7 +508,12 @@ $ripple: #10A3DB;
 
     .coinPageUSD,
     .coinPageBTC,
-    .cryptoDefinitionLTC {
+    .cryptoDefinitionBTC,
+    .cryptoDefinitionDASH,
+    .cryptoDefinitionETH,
+    .cryptoDefinitionLTC,
+    .cryptoDefinitionXMR,
+    .cryptoDefinitionXRP {
         font-size: 1.0625em;
     }
 
@@ -253,12 +528,31 @@ $ripple: #10A3DB;
     }
 }
 /* Pixel 2 */
-@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) { 
+@media only screen 
+    and (min-device-width: 411px) 
+    and (max-device-height: 731px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) { 
     .changePrice,
     .changePercent,
+    .investopediaBTC,
+    .investopediaBTC:hover,
+    .investopediaDASH,
+    .investopediaDASH:hover,
+    .investopediaETH,
+    .investopediaETH:hover,
     .investopediaLTC,
     .investopediaLTC:hover,
-    .cryptoDefinitionLTC {
+    .investopediaXMR,
+    .investopediaXMR:hover,
+    .investopediaXRP,
+    .investopediaXRP:hover,
+    .cryptoDefinitionBTC,
+    .cryptoDefinitionDASH,
+    .cryptoDefinitionETH,
+    .cryptoDefinitionLTC,
+    .cryptoDefinitionXMR,
+    .cryptoDefinitionXRP {
         font-size: 0.75em;
     }
 

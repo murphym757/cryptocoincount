@@ -35,13 +35,8 @@ var LitecoinPage = function (_Component) {
         var _this = _possibleConstructorReturn(this, (LitecoinPage.__proto__ || Object.getPrototypeOf(LitecoinPage)).call(this, props));
 
         _this.state = {
-            coin: {
-                fromLogo: null,
-                toLogo: null
-            },
-            priceData: {
-                coinPrice: null
-            }
+            coin: {},
+            priceData: {}
         };
         return _this;
     }
@@ -156,7 +151,7 @@ var LitecoinPage = function (_Component) {
                                     { 'class': 'row' },
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePrice col-xl-6' },
+                                        { 'class': 'changePriceLTC col-xl-6' },
                                         'Price change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',
@@ -166,7 +161,7 @@ var LitecoinPage = function (_Component) {
                                     ),
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePercent col-xl-6' },
+                                        { 'class': 'changePercentLTC col-xl-6' },
                                         'Percentage change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import CryptoLinks from '../design/cryptoLinks.js';
 import Logo from '../design/logo.js';
 
 // This page purposely blank
@@ -12,7 +11,7 @@ export default class Navigation extends Component {
                     <div class="col-6 btc-Icon">
                         <div class="row">
                             <div class="col-12">
-                                <Link to="/litecoin" style={{ textDecoration: 'none' }}>
+                                <Link to="/bitcoin" style={{ textDecoration: 'none' }}>
                                     <i class="cf cf-btc btc-links"></i>
                                 </Link>
                             </div>
@@ -22,7 +21,7 @@ export default class Navigation extends Component {
                     <div class="col-6 dash-Icon">
                         <div class="row">
                             <div class="col-12">
-                                <Link to="/litecoin" style={{ textDecoration: 'none' }}>
+                                <Link to="/dash" style={{ textDecoration: 'none' }}>
                                     <i class="cf cf-dash"></i>
                                 </Link>
                             </div>
@@ -34,7 +33,7 @@ export default class Navigation extends Component {
                     <div class="col-6 eth-Icon">
                         <div class="row">
                             <div class="col-12">
-                                <Link to="/litecoin" style={{ textDecoration: 'none' }}>
+                                <Link to="/ethereum" style={{ textDecoration: 'none' }}>
                                     <i class="cf cf-eth"></i>
                                 </Link>
                             </div>
@@ -56,7 +55,7 @@ export default class Navigation extends Component {
                     <div class="col-6 xmr-Icon">
                     <div class="row">
                                 <div class="col-12">
-                                <Link to="/litecoin" style={{ textDecoration: 'none' }}>
+                                <Link to="/monero" style={{ textDecoration: 'none' }}>
                                     <i class="cf cf-xmr"></i>
                                 </Link>
                                 </div>
@@ -66,7 +65,7 @@ export default class Navigation extends Component {
                     <div class="col-6 xrp-Icon">
                         <div class="row">
                             <div class="col-12">
-                                <Link to="/litecoin" style={{ textDecoration: 'none' }}>
+                                <Link to="/ripple" style={{ textDecoration: 'none' }}>
                                     <i class="cf cf-xrp"></i>
                                 </Link>
                             </div>

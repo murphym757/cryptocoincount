@@ -58,7 +58,7 @@ var Navigation = function (_Component) {
                                 { 'class': 'col-12' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
-                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    { to: '/bitcoin', style: { textDecoration: 'none' } },
                                     _react2.default.createElement('i', { 'class': 'cf cf-btc btc-links' })
                                 )
                             ),

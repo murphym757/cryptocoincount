@@ -20,6 +20,10 @@ var _litecoin = require('../cryptocurrencies/litecoin/litecoin.js');
 
 var _litecoin2 = _interopRequireDefault(_litecoin);
 
+var _bitcoin = require('../cryptocurrencies/bitcoin/bitcoin.js');
+
+var _bitcoin2 = _interopRequireDefault(_bitcoin);
+
 var _logo = require('../design/logo.js');
 
 var _logo2 = _interopRequireDefault(_logo);
@@ -59,7 +63,8 @@ var Home = function (_Component) {
                         _reactRouterDom.Switch,
                         null,
                         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/litecoin', component: _litecoin2.default })
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/litecoin', component: _litecoin2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/bitcoin', component: _bitcoin2.default })
                     )
                 )
             );

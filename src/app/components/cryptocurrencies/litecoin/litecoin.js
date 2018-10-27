@@ -7,11 +7,8 @@ export default class LitecoinPage extends Component {
         super(props);
         this.state = {
             coin: {
-                fromLogo: null,
-                toLogo: null
             },
             priceData: {
-                coinPrice: null
             }
         };
     }
@@ -69,8 +66,8 @@ export default class LitecoinPage extends Component {
                             <div class="container-fluid">
                                 <h5 class="coinCurrentPrice">Current Price: <span class="priceLTC">{this.state.priceData.coinPrice}</span></h5>
                                 <div class="row">
-                                <h5 class="changePrice col-xl-6">Price change (24 hours): <span class="pricechangeLTC">{this.state.priceData.coinChangePrice24Hours}</span></h5>
-                                <h5 class="changePercent col-xl-6">Percentage change (24 hours): <span class="percentChangeLTC">{this.state.priceData.coinChangePct24Hours}%</span></h5>
+                                <h5 class="changePriceLTC col-xl-6">Price change (24 hours): <span class="pricechangeLTC">{this.state.priceData.coinChangePrice24Hours}</span></h5>
+                                <h5 class="changePercentLTC col-xl-6">Percentage change (24 hours): <span class="percentChangeLTC">{this.state.priceData.coinChangePct24Hours}%</span></h5>
                             </div>
                             </div>
                         </div>
@@ -79,8 +76,8 @@ export default class LitecoinPage extends Component {
                             <div class="container-fluid">
                                 <h5 class="coinCurrentPrice">Current Price: <span class="priceLTC">{this.state.priceData.coinPriceBTC}</span></h5>
                                 <div class="row">
-                                <h5 class="changePrice col-xl-6">Price change (24 hours): <span class="btcPriceChangeLTC">{this.state.priceData.coinChangePrice24HoursBTC}</span></h5>
-                                <h5 class="changePercent col-xl-6">Percentage change (24 hours): <span class="btcPercentChangeLTC">{this.state.priceData.coinChangePct24HoursBTC}%</span></h5>
+                                <h5 class="BTCchangePriceLTC col-xl-6">Price change (24 hours): <span class="btcPriceChangeLTC">{this.state.priceData.coinChangePrice24HoursBTC}</span></h5>
+                                <h5 class="BTCchangePercentLTC col-xl-6">Percentage change (24 hours): <span class="btcPercentChangeLTC">{this.state.priceData.coinChangePct24HoursBTC}%</span></h5>
                             </div>
                             </div>
                         </div>
