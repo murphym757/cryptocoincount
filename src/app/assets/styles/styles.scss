@@ -144,7 +144,11 @@ footer {
 /* ---------------------------------------------------- */
 
 /* iphone 4 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 480px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) {
     .btc-Icon,
     .dash-Icon,
     .eth-Icon,
@@ -167,7 +171,11 @@ footer {
     }
 
 }
-@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 480px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: landscape) {
     .btc-Icon,
     .dash-Icon,
     .eth-Icon,
@@ -191,38 +199,110 @@ footer {
 }
 
 /* iphone 5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) {
-
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 568px) 
+    and (orientation: portrait) {
+    .naviLinks {
+        padding-top: 1em;
+    }
 }
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-height: 568px) 
+    and (orientation: landscape) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 40px;
+    }
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 10px;
+    }
 
+    .naviLinks {
+        padding-top: 0.5em;
+    }
 }
 
 /* Galaxy S5 */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
-
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-height: 640px) 
+    and (orientation: portrait) {
+        .naviLinks {
+            padding-top: 5em;
+        }
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-height: 640px) 
+    and (orientation: landscape) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 30px;
+    }
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 20px;
+    }
 
+    .naviLinks {
+        padding-top: 1em;
+    }
 }
 
 /* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+    .naviLinks {
+        padding-top: 1em;
+    }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px) 
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation: landscape) {
 
 }
 
 /* iphone 6+, 6s+, 7+, 8+ */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+@media only screen 
+    and (min-device-width: 414px)
+    and (max-device-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
     .naviLinks {
-        padding-top: 3em;
+        padding-top: 1em;
     }
 }
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
     .btc-Icon,
     .dash-Icon,
     .eth-Icon,
@@ -246,20 +326,59 @@ footer {
 }
 
 /* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+    .naviLinks {
+        padding-top: 1em;
+    }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 30px;
+    }
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 20px;
+    }
 
+    .naviLinks {
+        padding-top: 0.5em;
+    }
 }
 
 /* Pixel 2 */
-@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-
+@media only screen 
+    and (min-device-width: 411px) 
+    and (max-device-height: 731px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) {
+    .naviLinks {
+        padding-top: 5em;
+    }
 }
 
-@media only screen and (min-device-width: 411px) and (max-device-height: 731px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen 
+    and (min-device-width: 411px) 
+    and (max-device-height: 731px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: landscape) {
 
 }
 
@@ -267,29 +386,96 @@ footer {
 
 /* Ipad */
 
-@media (min-width: 768px) and (max-width: 811px) and (orientation: portrait) {
-    
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-height: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 125px;
+    }
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 50px;
+    }
+
+    .naviLinks {
+        padding-top: 5em;
+    }
 }
 
-@media (min-width: 824px) and (max-width: 1024px) and (orientation: landscape) {
-    
+
+/* Ipad  Pro*/
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 200px;
+    }
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 80px;
+    }
+
+    .naviLinks {
+        padding-top: 5em;
+    }
 }
 
-/* Ipad Pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+    .btc-Icon,
+    .dash-Icon,
+    .eth-Icon,
+    .ltc-Icon,
+    .xmr-Icon,
+    .xrp-Icon {
+        font-size: 90px;
+    }
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: portrait) {
-    
-}
+    .btc-link-name,
+    .dash-link-name,
+    .eth-link-name,
+    .ltc-link-name,
+    .xmr-link-name,
+    .xrp-link-name {
+        font-size: 50px;
+    }
 
-@media (min-width: 1025px) and (max-width: 1439px) and (orientation: landscape) {
-   
+    .naviLinks {
+        padding-top: 3em;
+    }
 }
 
 /* ---------------------------------------------------- */
 
 /* MDPI Screens (Computers, 1440px and up) */
 
-@media (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) {
+@media (min-width: 1280px) and (max-width: 1439px) and (orientation: landscape) {
     
 }
 

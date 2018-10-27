@@ -52,7 +52,7 @@ export default class Navigation extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="row pb-5">
+                <div class="row">
                     <div class="col-6 xmr-Icon">
                     <div class="row">
                                 <div class="col-12">

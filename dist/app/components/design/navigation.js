@@ -142,7 +142,7 @@ var Navigation = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'row pb-5' },
+                    { 'class': 'row' },
                     _react2.default.createElement(
                         'div',
                         { 'class': 'col-6 xmr-Icon' },
