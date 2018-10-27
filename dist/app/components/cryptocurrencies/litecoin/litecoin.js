@@ -205,7 +205,7 @@ var LitecoinPage = function (_Component) {
                                     { 'class': 'row' },
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePrice col-xl-6' },
+                                        { 'class': 'BTCchangePriceLTC col-xl-6' },
                                         'Price change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',
@@ -215,7 +215,7 @@ var LitecoinPage = function (_Component) {
                                     ),
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePercent col-xl-6' },
+                                        { 'class': 'BTCchangePercentLTC col-xl-6' },
                                         'Percentage change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',

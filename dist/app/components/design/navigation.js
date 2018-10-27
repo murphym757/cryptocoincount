@@ -12,10 +12,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = require('react-router-dom');
 
-var _cryptoLinks = require('../design/cryptoLinks.js');
-
-var _cryptoLinks2 = _interopRequireDefault(_cryptoLinks);
-
 var _logo = require('../design/logo.js');
 
 var _logo2 = _interopRequireDefault(_logo);
@@ -80,7 +76,7 @@ var Navigation = function (_Component) {
                                 { 'class': 'col-12' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
-                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    { to: '/dash', style: { textDecoration: 'none' } },
                                     _react2.default.createElement('i', { 'class': 'cf cf-dash' })
                                 )
                             ),
@@ -106,7 +102,7 @@ var Navigation = function (_Component) {
                                 { 'class': 'col-12' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
-                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    { to: '/ethereum', style: { textDecoration: 'none' } },
                                     _react2.default.createElement('i', { 'class': 'cf cf-eth' })
                                 )
                             ),
@@ -154,7 +150,7 @@ var Navigation = function (_Component) {
                                 { 'class': 'col-12' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
-                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    { to: '/monero', style: { textDecoration: 'none' } },
                                     _react2.default.createElement('i', { 'class': 'cf cf-xmr' })
                                 )
                             ),
@@ -176,7 +172,7 @@ var Navigation = function (_Component) {
                                 { 'class': 'col-12' },
                                 _react2.default.createElement(
                                     _reactRouterDom.Link,
-                                    { to: '/litecoin', style: { textDecoration: 'none' } },
+                                    { to: '/ripple', style: { textDecoration: 'none' } },
                                     _react2.default.createElement('i', { 'class': 'cf cf-xrp' })
                                 )
                             ),

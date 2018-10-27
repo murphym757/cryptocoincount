@@ -20,16 +20,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var CryptoLinksBTC = function (_Component) {
-    _inherits(CryptoLinksBTC, _Component);
+var CryptoLinksXMR = function (_Component) {
+    _inherits(CryptoLinksXMR, _Component);
 
-    function CryptoLinksBTC() {
-        _classCallCheck(this, CryptoLinksBTC);
+    function CryptoLinksXMR() {
+        _classCallCheck(this, CryptoLinksXMR);
 
-        return _possibleConstructorReturn(this, (CryptoLinksBTC.__proto__ || Object.getPrototypeOf(CryptoLinksBTC)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (CryptoLinksXMR.__proto__ || Object.getPrototypeOf(CryptoLinksXMR)).apply(this, arguments));
     }
 
-    _createClass(CryptoLinksBTC, [{
+    _createClass(CryptoLinksXMR, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -46,7 +46,7 @@ var CryptoLinksBTC = function (_Component) {
                             { to: '/bitcoin', style: { textDecoration: 'none' } },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'btc-activeLink' },
+                                { 'class': 'btc-notActiveLink' },
                                 _react2.default.createElement('i', { 'class': 'cf cf-btc' })
                             )
                         )
@@ -98,7 +98,7 @@ var CryptoLinksBTC = function (_Component) {
                             { to: '/monero', style: { textDecoration: 'none' } },
                             _react2.default.createElement(
                                 'div',
-                                { 'class': 'xmr-notActiveLink' },
+                                { 'class': 'xmr-activeLink' },
                                 _react2.default.createElement('i', { 'class': 'cf cf-xmr' })
                             )
                         )
@@ -121,7 +121,7 @@ var CryptoLinksBTC = function (_Component) {
         }
     }]);
 
-    return CryptoLinksBTC;
+    return CryptoLinksXMR;
 }(_react.Component);
 
-exports.default = CryptoLinksBTC;
+exports.default = CryptoLinksXMR;

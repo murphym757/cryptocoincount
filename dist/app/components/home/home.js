@@ -16,21 +16,33 @@ var _navigation = require('../design/navigation.js');
 
 var _navigation2 = _interopRequireDefault(_navigation);
 
-var _litecoin = require('../cryptocurrencies/litecoin/litecoin.js');
-
-var _litecoin2 = _interopRequireDefault(_litecoin);
-
 var _bitcoin = require('../cryptocurrencies/bitcoin/bitcoin.js');
 
 var _bitcoin2 = _interopRequireDefault(_bitcoin);
 
+var _dash = require('../cryptocurrencies/dash/dash.js');
+
+var _dash2 = _interopRequireDefault(_dash);
+
+var _ethereum = require('../cryptocurrencies/ethereum/ethereum.js');
+
+var _ethereum2 = _interopRequireDefault(_ethereum);
+
+var _litecoin = require('../cryptocurrencies/litecoin/litecoin.js');
+
+var _litecoin2 = _interopRequireDefault(_litecoin);
+
+var _monero = require('../cryptocurrencies/monero/monero.js');
+
+var _monero2 = _interopRequireDefault(_monero);
+
+var _ripple = require('../cryptocurrencies/ripple/ripple.js');
+
+var _ripple2 = _interopRequireDefault(_ripple);
+
 var _logo = require('../design/logo.js');
 
 var _logo2 = _interopRequireDefault(_logo);
-
-var _cryptoLinks = require('../design/cryptoLinks.js');
-
-var _cryptoLinks2 = _interopRequireDefault(_cryptoLinks);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63,8 +75,12 @@ var Home = function (_Component) {
                         _reactRouterDom.Switch,
                         null,
                         _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _navigation2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/bitcoin', component: _bitcoin2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/dash', component: _dash2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/ethereum', component: _ethereum2.default }),
                         _react2.default.createElement(_reactRouterDom.Route, { path: '/litecoin', component: _litecoin2.default }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/bitcoin', component: _bitcoin2.default })
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/monero', component: _monero2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/ripple', component: _ripple2.default })
                     )
                 )
             );

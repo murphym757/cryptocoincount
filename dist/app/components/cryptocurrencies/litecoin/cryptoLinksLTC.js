@@ -44,7 +44,11 @@ var CryptoLinksLTC = function (_Component) {
                         _react2.default.createElement(
                             _reactRouterDom.Link,
                             { to: '/bitcoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-btc' })
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'btc-notActiveLink' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-btc' })
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -52,8 +56,12 @@ var CryptoLinksLTC = function (_Component) {
                         { 'class': 'col-2' },
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-dash' })
+                            { to: '/dash', style: { textDecoration: 'none' } },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'dash-notActiveLink' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-dash' })
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -61,8 +69,12 @@ var CryptoLinksLTC = function (_Component) {
                         { 'class': 'col-2' },
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-eth' })
+                            { to: '/ethereum', style: { textDecoration: 'none' } },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'eth-notActiveLink' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-eth' })
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -83,8 +95,12 @@ var CryptoLinksLTC = function (_Component) {
                         { 'class': 'col-2' },
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-xmr' })
+                            { to: '/monero', style: { textDecoration: 'none' } },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'xmr-notActiveLink' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-xmr' })
+                            )
                         )
                     ),
                     _react2.default.createElement(
@@ -92,8 +108,12 @@ var CryptoLinksLTC = function (_Component) {
                         { 'class': 'col-2' },
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: '/litecoin', style: { textDecoration: 'none' } },
-                            _react2.default.createElement('i', { 'class': 'cf cf-xrp' })
+                            { to: '/ripple', style: { textDecoration: 'none' } },
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'xrp-notActiveLink' },
+                                _react2.default.createElement('i', { 'class': 'cf cf-xrp' })
+                            )
                         )
                     )
                 )

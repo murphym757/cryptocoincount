@@ -32,7 +32,7 @@ require('./app/assets/cryptoFont/sass/cryptofont.scss');
 
 require('./app/assets/styles/cryptoIcons.scss');
 
-require('./app/assets/styles/cryptocurrenciesLTC.scss');
+require('./app/assets/styles/cryptocurrencies.scss');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

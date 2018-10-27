@@ -14,9 +14,9 @@ var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _cryptoLinksBTC = require('../bitcoin/cryptoLinksBTC.js');
+var _cryptoLinksETH = require('../ethereum/cryptoLinksETH.js');
 
-var _cryptoLinksBTC2 = _interopRequireDefault(_cryptoLinksBTC);
+var _cryptoLinksETH2 = _interopRequireDefault(_cryptoLinksETH);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52,7 +52,7 @@ var LitecoinPage = function (_Component) {
         value: function generalCoinInfo() {
             var _this2 = this;
 
-            var coinType = "BTC";
+            var coinType = "ETH";
             _axios2.default.get('https://min-api.cryptocompare.com/data/top/exchanges/full?fsym=' + coinType + '&tsym=USD&e=coinbase').then(function (res) {
                 _this2.setState({
                     coin: {
@@ -68,14 +68,18 @@ var LitecoinPage = function (_Component) {
         value: function coinPriceData() {
             var _this3 = this;
 
-            _axios2.default.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD&e=coinbase').then(function (res) {
+            _axios2.default.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=USD,BTC&e=coinbase').then(function (res) {
                 _this3.setState({
                     priceData: {
-                        coinPrice: res.data.DISPLAY.BTC.USD.PRICE,
-                        coinExchange: res.data.DISPLAY.BTC.USD.MARKET,
-                        coinChangePrice24Hours: res.data.DISPLAY.BTC.USD.CHANGE24HOUR,
-                        coinChangePct24Hours: res.data.DISPLAY.BTC.USD.CHANGEPCT24HOUR,
-                        dollarSign: res.data.DISPLAY.BTC.USD.TOSYMBOL
+                        coinPrice: res.data.DISPLAY.ETH.USD.PRICE,
+                        coinExchange: res.data.DISPLAY.ETH.USD.MARKET,
+                        coinChangePrice24Hours: res.data.DISPLAY.ETH.USD.CHANGE24HOUR,
+                        coinChangePct24Hours: res.data.DISPLAY.ETH.USD.CHANGEPCT24HOUR,
+                        dollarSign: res.data.DISPLAY.ETH.USD.TOSYMBOL,
+                        bitcoinSign: res.data.DISPLAY.ETH.BTC.TOSYMBOL,
+                        coinPriceBTC: res.data.DISPLAY.ETH.BTC.PRICE,
+                        coinChangePrice24HoursBTC: res.data.DISPLAY.ETH.BTC.CHANGE24HOUR,
+                        coinChangePct24HoursBTC: res.data.DISPLAY.ETH.BTC.CHANGEPCT24HOUR
                     }
                 });
             });
@@ -86,7 +90,7 @@ var LitecoinPage = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_cryptoLinksBTC2.default, null),
+                _react2.default.createElement(_cryptoLinksETH2.default, null),
                 _react2.default.createElement(
                     'div',
                     { 'class': 'container' },
@@ -97,7 +101,7 @@ var LitecoinPage = function (_Component) {
                         ' (',
                         _react2.default.createElement(
                             'span',
-                            { 'class': 'coinInitialsBTC' },
+                            { 'class': 'coinInitialsETH' },
                             this.state.coin.coinName
                         ),
                         ')'
@@ -108,7 +112,7 @@ var LitecoinPage = function (_Component) {
                         'Coin data courtesy of ',
                         _react2.default.createElement(
                             'span',
-                            { 'class': 'exchangeBTC' },
+                            { 'class': 'exchangeETH' },
                             this.state.priceData.coinExchange
                         )
                     ),
@@ -124,7 +128,7 @@ var LitecoinPage = function (_Component) {
                                 'United States Dollar (',
                                 _react2.default.createElement(
                                     'span',
-                                    { 'class': 'coinInitialsBTC' },
+                                    { 'class': 'coinInitialsETH' },
                                     this.state.priceData.dollarSign
                                 ),
                                 ')'
@@ -138,7 +142,7 @@ var LitecoinPage = function (_Component) {
                                     'Current Price: ',
                                     _react2.default.createElement(
                                         'span',
-                                        { 'class': 'priceBTC' },
+                                        { 'class': 'priceETH' },
                                         this.state.priceData.coinPrice
                                     )
                                 ),
@@ -147,22 +151,76 @@ var LitecoinPage = function (_Component) {
                                     { 'class': 'row' },
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePriceBTC col-xl-6' },
+                                        { 'class': 'changePriceETH col-xl-6' },
                                         'Price change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',
-                                            { 'class': 'pricechangeBTC' },
+                                            { 'class': 'pricechangeETH' },
                                             this.state.priceData.coinChangePrice24Hours
                                         )
                                     ),
                                     _react2.default.createElement(
                                         'h5',
-                                        { 'class': 'changePercentBTC col-xl-6' },
+                                        { 'class': 'changePercentETH col-xl-6' },
                                         'Percentage change (24 hours): ',
                                         _react2.default.createElement(
                                             'span',
-                                            { 'class': 'percentChangeBTC' },
+                                            { 'class': 'percentChangeETH' },
                                             this.state.priceData.coinChangePct24Hours,
+                                            '%'
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { 'class': 'container-fluid BTC col-sm-6' },
+                            _react2.default.createElement(
+                                'h5',
+                                { 'class': 'coinPageBTC' },
+                                'Bitcoin (',
+                                _react2.default.createElement(
+                                    'span',
+                                    { 'class': 'bitcoinLogo' },
+                                    _react2.default.createElement('i', { 'class': 'cf cf-btc btcCompare' })
+                                ),
+                                ')'
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { 'class': 'container-fluid' },
+                                _react2.default.createElement(
+                                    'h5',
+                                    { 'class': 'coinCurrentPrice' },
+                                    'Current Price: ',
+                                    _react2.default.createElement(
+                                        'span',
+                                        { 'class': 'priceETH' },
+                                        this.state.priceData.coinPriceBTC
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { 'class': 'row' },
+                                    _react2.default.createElement(
+                                        'h5',
+                                        { 'class': 'BTCchangePriceETH col-xl-6' },
+                                        'Price change (24 hours): ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            { 'class': 'btcPriceChangeETH' },
+                                            this.state.priceData.coinChangePrice24HoursBTC
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'h5',
+                                        { 'class': 'BTCchangePercentETH col-xl-6' },
+                                        'Percentage change (24 hours): ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            { 'class': 'btcPercentChangeETH' },
+                                            this.state.priceData.coinChangePct24HoursBTC,
                                             '%'
                                         )
                                     )
@@ -174,15 +232,15 @@ var LitecoinPage = function (_Component) {
                             { 'class': 'container-fluid' },
                             _react2.default.createElement(
                                 'h6',
-                                { 'class': 'cryptoDefinitionBTC' },
-                                'Bitcoin is a digital currency created in 2009. It follows the ideas set out in a white paper by the mysterious Satoshi Nakamoto, whose true identity has yet to be verified. Bitcoin offers the promise of lower transaction fees than traditional online payment mechanisms and is operated by a decentralized authority, unlike government-issued currencies.'
+                                { 'class': 'cryptoDefinitionETH' },
+                                'Ethereum is a decentralized software platform that enables SmartContracts and Distributed Applications (\u0110Apps) to be built and run without any downtime, fraud, control or interference from a third party.'
                             ),
                             _react2.default.createElement(
                                 'h6',
                                 { 'class': 'investopediaLink lead' },
                                 _react2.default.createElement(
                                     'a',
-                                    { href: 'https://www.investopedia.com/terms/b/bitcoin.asp', 'class': 'InvestopediabTC', target: '_blank' },
+                                    { href: 'https://www.investopedia.com/terms/e/ethereum.asp', 'class': 'InvestopediaLTC', target: '_blank' },
                                     '- Investopedia'
                                 )
                             )
