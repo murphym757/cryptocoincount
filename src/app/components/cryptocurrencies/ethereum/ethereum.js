@@ -72,7 +72,7 @@ export default class LitecoinPage extends Component {
                             </div>
                         </div>
                         <div class="container-fluid BTC col-sm-6">
-                        <h5 class="coinPageBTC">Bitcoin (<span class="bitcoinLogo"><i class="cf cf-btc btcCompare"></i></span>)</h5>
+                        <h5 class="coinPageBTC">Bitcoin (<span class="bitcoinLogoETH"><i class="cf cf-btc btcCompareETH"></i></span>)</h5>
                             <div class="container-fluid">
                                 <h5 class="coinCurrentPrice">Current Price: <span class="priceETH">{this.state.priceData.coinPriceBTC}</span></h5>
                                 <div class="row">

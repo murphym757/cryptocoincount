@@ -14,7 +14,9 @@ export default class Home extends Component {
         return (
             <Router>
                 <div class="container">
-                    <Logo />
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <Logo />
+                    </Link>
                     {/*Routes*/}
                     <Switch>
                         <Route exact path="/" component={Navigation}/>
