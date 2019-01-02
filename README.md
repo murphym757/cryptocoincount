@@ -1,76 +1,9 @@
-# react-template
+# CrytpoCoinCount
 
-This project is meant to serve as a ready-to-go React app. With the purpose of reducing the stress setup process.
+This project is a react app that provides the user with an up-to-date look at various forms of cryptocurrencies.
 
-
-### Prerequisites
-
-Clone the repository:
-
-```
-git clone https://github.com/murphym757/react-template
-```
-
-Rename the react-template folder to whatever you'd like.
-
-Using a terminal, navigate to the that folder and run this code to remove the current repository:
-
-```
-rm -rf .git
-```
-
-### Installing
-
-Install all of the project's node modules via:
-
-```
-npm install
-```
-
-Transpile the component source files
-
-```
-npm run transpile
-```
-
-compile the component source files
-
-```
-npm run build
-```
-
-## Testing the code
-
-```
-npm start
-```
-The server is set to 3000, so navigate in your web browser to,http://localhost:3000/. Don't forget to press ctrl+c to close. From there, you can make whatever changes you'd like. Howeever, you must repeat the transpile and build stages again.
-
-
-### Styling
-
-Everything in the assets folder can be changed to your liking.
-
-### Deployment
-
-Publish your newly created repository to GitHub. 
-
-This project was created with deploying to Heroku in mind.
-
-* Simply create a Heroku account.
-* On Heroku, create a new app and add GitHub as a deployment method. Enable automatic deploys on that pipeline.
-
-Install the [Heroku-Cli](https://devcenter.heroku.com/articles/heroku-cli).
-
-```
-npm install -g heroku
-```
-
-Please place this line of code in the heroku-cli to ensure that the devDependencies are installed properly:
-
-```
-heroku config:set NPM_CONFIG_PRODUCTION=false --app yourappname
-```
+## How Does it Work
+Currently, only these six coins are being provided: Bitcoin, Ethereum, Litecoin, Dash, Monero, and Ripple(XRP). Each coin has a page providing the user with currency conversions to Dollars (USD) and Bitcoin (with the exception being the actual Bitcoin page). For each conversion, there is a price change and percentage change with both tallying data over the previous 24 hours. The last item on each page is a description of the coin itself courtesy of Investopedia.
 
 ## Built With
 
@@ -80,6 +13,7 @@ heroku config:set NPM_CONFIG_PRODUCTION=false --app yourappname
 * [Node.js](https://nodejs.org/en/) - Backend framework
 * [Bootstrap](https://getbootstrap.com/) - Front-end component library
 * [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) - PaaP host
+* [CryptoCompare API](https://www.cryptocompare.com/) - Cryptocurrency API
 
 ## Authors
 
