@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A React template for future projects.",
   "main": "dist/index.js",
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.19.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/server.js",
