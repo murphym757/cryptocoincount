@@ -4,7 +4,7 @@
   "description": "A React template for future projects.",
   "main": "dist/index.js",
   "engines": {
-    "node": "16.13.0",
+    "node": "18.9.0",
     "npm": "8.19.2"
   },
   "scripts": {
@@ -31,7 +31,6 @@
     "popper.js": "^1.14.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "sass": "^1.54.9",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2"
@@ -48,6 +47,7 @@
     "html-webpack-plugin": "^3.2.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.3.3",
+    "node-sass": "^7.0.3",
     "react-number-format": "^3.6.2",
     "react-router-dom": "^4.3.1",
     "serve-favicon": "^2.5.0",
